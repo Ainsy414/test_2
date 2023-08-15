@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MAK'B agricoles</title>
+
+	<link rel="stylesheet" type="text/css" href="session.CSS">
+</head>
+        <body>
+            <header>
+                <nav>
+                    
+                    <ul>
+                        <li class="touch"><a href="index.html">accueil</a></li>
+                        <li class="touch"><a href="#">produits</a>
+                            <div class="sous">
+                                <ul>
+                                    <li><a href="#">produits</a></li>
+                                    <li><a href="#">Catalogue</a></li>
+                                    <li><a href="#">Autre produits</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="touch"><a href="contact.html">Services Clients</a></li>
+                    </ul>
+                </nav>
+            </header>
+        <br><br>
+        <div class="header">
+		
+            <div class="contenu">
+                <h2>Consulter les Produits Agricoles  de votre choix</h2>
+                <p>Nous vous accompagnons dans le choix de vos produits</p>
+                
+            </div>
+            
+                            
+            <div class="ff">
+                <div id="arriere_plan1">
+                    <div class="text">
+                        <h1>Nos melleurs Produits </h1>
+                    </div>
+                    <section class="deco">
+                        
+                        <article id="pp">
+                            <img src="D:\image/Picture_10.jpg" width="200vh" height="200vh">
+                            <p> very good</p>
+                        </article>
+                        <article  id="pp">
+                            <img src="D:\image/cocktail6.jpg" width="200vh" height="200vh">
+                            <p>very good</p>
+                        </article>
+                        <article  id="pp">
+                            <img src="D:\image/lolo.jpg" width="200vh" height="200vh">
+                            <p>very good</p>
+                        </article >
+                        <article  id="pp">
+                            <img src="D:\image/biz.jpg" width="200vh" height="200vh">
+                            <p>very good</p>
+                        </article>
+                    </section>
+                </div>
+               
+                <footer>
+                    <div class="formulaire">
+                     
+                        
+                        
+                        <h1>Passer Votre Commande</h1>
+                        <form>
+                            <label for="nom">Noms:</label>
+                            <input type="text" id="nom" name required>
+                            <label for="quantite">Quantité:</label>
+                            <input type="number" id="quantite" name="quantite" min="1" max="100" required>
+                            <label for="prix-unitaire">Prix Unitaire(PU):</label> 
+                            <input type="text" id="prix-unitaire" name="prix-unitaire" required>
+                            <label for="mot-de-passe">Mot de Passe :</label>
+                            <input type="password" id="mot-de-passe" name="mot-de-passe"required>
+                            <label for="confirmer-le-mot-de-passe">Confirmer le mot de Passe:</label>
+                            <input type="password" id="confirmer-le-mot-de-passe" name="confirmer-le-mot-de-passe" required>
+                            <button type="=submit" onclick="return validate()">Acheter</button>
+                        </form>
+                        <script>
+                            function validate(){
+                                var password=document.getElementById("Mot-de-passe").value;
+                                var confirmPassword=document.getElementById("confirmer-le-mot-de-passe").value; 
+                                if(password !=confirmPassword){
+                                    alert("le mot de passe ne correspond pas."); 
+                                    return false; 
+            
+                                }
+                                return true; 
+                            }
+                        </script>
+                        </main>
+                        <p> Tous droits reservés@2023 [MAK'agricoles] </p>
+                    </div>
+                   
+
+                </footer>
+            
+
+            </body>
+            
+           
+    </head>
+</html>
